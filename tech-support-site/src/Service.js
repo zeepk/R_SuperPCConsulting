@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Spring } from "react-spring/renderprops";
 
 var innerStyle = {
   padding: "3vh 0",
@@ -17,13 +18,22 @@ export default function Service(props) {
     height: "15vw"
   };
   return (
-    <div style={circleStyle}>
-      <div style={innerStyle}>
-        <FontAwesomeIcon icon={props.iconName} size={"7x"} />
-        <br />
-        <br />
-        <h2>{props.serviceName}</h2>
-      </div>
-    </div>
+    <Spring
+      from={{ opacity: 0, marginTop: -500 }}
+      to={{ opacity: 1, marginTop: 0 }}
+    >
+      {props2 => (
+        <div style={props2}>
+          <div style={circleStyle}>
+            <div style={innerStyle}>
+              <FontAwesomeIcon icon={props.iconName} size={"7x"} />
+              <br />
+              <br />
+              <h2>{props.serviceName}</h2>
+            </div>
+          </div>
+        </div>
+      )}
+    </Spring>
   );
 }
