@@ -8,9 +8,11 @@
 }
 header {
   font-size: 30px;
+  background-color: black;
+  color: #fff;
 }
 img {
-  max-width: 40em;
+  max-width: 60vw;
 }
 .HeadGrid {
   display: grid;
@@ -31,7 +33,6 @@ img {
   display: grid;
   grid-template-columns: 10vw 20vw 20vw 20vw 20vw 10vw;
   /* grid-template-rows: 500px; */
-  grid-gap: 10px;
 }
 .NavGrid a:hover {
   border: 2px solid #edbd8f;
@@ -55,7 +56,10 @@ img {
   text-align: center;
   font-size: 30px;
   font-family: "Open Sans", sans-serif;
-  color: #9a632e;
+  color: black;
+}
+.ServicesBox ul {
+  list-style-type: none;
 }
 .ServicesBox li {
   padding: 10px;
