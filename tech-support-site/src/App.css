@@ -12,3 +12,51 @@ header {
 img {
   max-width: 40em;
 }
+.HeadGrid {
+  display: grid;
+  grid-template-columns: 33vw 33vw 33vw;
+  grid-template-rows: 90px 90px;
+  grid-gap: 10px;
+}
+
+.HeadBox {
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.NavGrid {
+  display: grid;
+  grid-template-columns: 10vw 20vw 20vw 20vw 20vw 10vw;
+  /* grid-template-rows: 500px; */
+  grid-gap: 10px;
+}
+.NavGrid a:hover {
+  border: 2px solid #edbd8f;
+}
+
+.NavBox {
+  border-radius: 5px;
+
+  text-align: center;
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+  color: black;
+}
+.ServicesGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* grid-template-rows: 500px; */
+  grid-gap: 10px;
+}
+.ServicesBox {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Open Sans", sans-serif;
+  color: #9a632e;
+}
+.ServicesBox li {
+  padding: 10px;
+}
