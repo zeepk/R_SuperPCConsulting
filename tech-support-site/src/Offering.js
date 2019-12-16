@@ -2,6 +2,9 @@ import React from "react";
 import { Spring } from "react-spring/renderprops";
 
 export default function Offering() {
+  const c1style = {
+    fontSize: "1.5vw"
+  };
   return (
     <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>
       {props => (
@@ -26,5 +29,3 @@ export default function Offering() {
     </Spring>
   );
 }
-
-const c1style = {};
