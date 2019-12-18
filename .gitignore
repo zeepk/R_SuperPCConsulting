@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/tech-support-site
 /.pnp
 .pnp.js
 
