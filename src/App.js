@@ -93,7 +93,7 @@ function App() {
           )}
         />
         {/* <Route path="/Contact" component={Contact} /> */}
-        <Route path="/Business" component={Business} />
+        <Route exact path="/Business" component={Business} />
       </Router>
     </React.Fragment>
   );
