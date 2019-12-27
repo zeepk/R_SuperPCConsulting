@@ -25,9 +25,14 @@ function App() {
           path="/"
           render={props => (
             <React.Fragment>
+              <meta
+                content="width=device-width, initial-scale=1"
+                name="viewport"
+              />
               <div className="App">
                 <header>
                   <br />
+                  <p className="Phone">Phone Number Placeholder</p>
                   <h1>Super PC Consulting</h1>
                   <h4>Computer Consulting and Repair</h4>
                   <br />
@@ -35,8 +40,6 @@ function App() {
 
                 <body>
                   <div class="NavGrid">
-                    <div class="NavBox a"></div>
-
                     <div class="NavBox b">
                       <Link to="/Business" style={{ textDecoration: "none" }}>
                         <Service
@@ -85,8 +88,6 @@ function App() {
                         />
                       </Link>
                     </div>
-
-                    <div class="NavBox f"></div>
                   </div>
 
                   <br />
@@ -103,14 +104,14 @@ function App() {
                       <Offering />
                     </div>
                   </div>
+                  <div class="QuoteBox">
+                    <h1>
+                      "Great customer service, explained everything to me and
+                      even showed up on time. Absolutely would recommend them
+                      for any job big or small" -PO
+                    </h1>
+                  </div>
                 </body>
-                <div class="QuoteBox">
-                  <h1>
-                    "Great customer service, explained everything to me and even
-                    showed up on time. Absolutely would recommend them for any
-                    job big or small" -PO
-                  </h1>
-                </div>
               </div>
               {/* <footer>
                 <p>Created by Matt Hughes</p>

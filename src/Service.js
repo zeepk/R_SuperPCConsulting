@@ -4,7 +4,7 @@ import { Spring } from "react-spring/renderprops";
 
 var innerStyle = {
   padding: "3vh 0",
-  fontSize: "1vw"
+  fontSize: "1.8vh"
 };
 
 export default function Service(props) {
@@ -14,8 +14,8 @@ export default function Service(props) {
     display: "inline-block",
     backgroundColor: props.circleColor,
     borderRadius: "50%",
-    width: "11.5vw",
-    height: "11.5vw"
+    width: "20vh",
+    height: "20vh"
   };
   return (
     <Spring
