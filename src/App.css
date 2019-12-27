@@ -2,7 +2,7 @@
   /* --service-box-size: 60%; */
   --primary-color: #89b6d4;
   --dark-color: #333333;
-  --light-color: #ffffff;
+  --light-color: #e7e7e7;
   --bad-color: #d46671;
   --good-color: #5ba36c;
 }
@@ -19,6 +19,7 @@
 }
 header {
   font-size: 2vh;
+  background-color: var(--dark-color);
   background-color: black;
   color: #fff;
   height: 15%;
@@ -61,22 +62,29 @@ img {
 }
 .ServicesGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(610px, 1fr));
   grid-template-rows: repeat(auto-fit);
   /* grid-gap: 10px; */
-  background-color: #e6e6e6;
+  /* background-color: #e6e6e6; */
   overflow: hidden;
+  background-color: black;
 }
 .ServicesBox {
   width: 100vh;
   text-align: center;
   font-family: "Open Sans", sans-serif;
   color: black;
+  padding: 0 10vw;
 }
 .ServicesBox ul {
+  background-color: black;
   font-size: 20px;
   list-style-type: none;
   padding-bottom: 10px;
+  border-radius: 5px;
+  /* box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.43); */
+
+  color: var(--light-color);
 }
 .ServicesBox li {
   padding: 1vh;
@@ -90,6 +98,7 @@ a:hover {
 .QuoteBox {
   background-color: #8abad0;
   /* height: 10%; */
+  margin-top: 5vh;
 }
 .QuoteBox h1 {
   font-size: 2vh;
