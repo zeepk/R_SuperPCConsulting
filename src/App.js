@@ -5,6 +5,7 @@ import Business from "./pages/Business";
 import Residential from "./pages/Residential";
 import CloudService from "./pages/CloudService";
 import DataRecovery from "./pages/DataRecovery";
+import Header from "./components/Header";
 import "./App.css";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
@@ -31,11 +32,7 @@ function App() {
               />
               <div className="App">
                 <header>
-                  <br />
-                  <p className="Phone">Phone Number Placeholder</p>
-                  <h1>Super PC Consulting</h1>
-                  <h4>Computer Consulting and Repair</h4>
-                  <br />
+                  <Header />
                 </header>
 
                 <body>
@@ -98,6 +95,7 @@ function App() {
                         src={require("./images/laptop1.jpeg")}
                         alt="Laptop"
                         align="left"
+                        className="LaptopImage"
                       />
                     </div>
                     <div class="ServicesBox">

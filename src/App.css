@@ -5,6 +5,7 @@
   --light-color: #e7e7e7;
   --bad-color: #d46671;
   --good-color: #5ba36c;
+  --background-light: #d6d6d6;
 }
 
 * {
@@ -16,6 +17,7 @@
   text-align: center;
   color: black;
   height: 100vh;
+  background-color: var(--background-light);
 }
 header {
   font-size: 2vh;
@@ -23,14 +25,21 @@ header {
   background-color: black;
   color: #fff;
   height: 15%;
+  text-align: center;
+  text-decoration: "none";
+}
+header a {
 }
 body {
+  background-color: var(--background-light);
   height: 75%;
 }
 img {
   /* max-width: 60vw; */
   max-height: 100%;
+  box-shadow: 5px 5px 10px;
 }
+
 .HeadGrid {
   display: grid;
   grid-template-columns: 33vw 33vw 33vw;
@@ -53,7 +62,7 @@ img {
 }
 
 .NavBox {
-  border-radius: 5px;
+  /* border-radius: 5px; */
 
   text-align: center;
   font-size: 30px;
@@ -99,6 +108,9 @@ a:hover {
   background-color: #8abad0;
   /* height: 10%; */
   margin-top: 5vh;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 .QuoteBox h1 {
   font-size: 2vh;
@@ -109,9 +121,12 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   /* grid-template-rows: 100%; */
+  grid-gap: 5vw;
 }
 .BusinessBox {
   text-align: left;
+  max-width: 90vw;
+  /* min-height: 50vh; */
 }
 .BusinessServicesGrid {
   display: grid;
@@ -124,10 +139,13 @@ a:hover {
   padding: 30px;
   text-align: center;
   background-color: var(--primary-color);
+  max-width: 100vw;
+  border-radius: 10px;
 }
+
 .Phone {
   text-align: left;
-  padding-left: 10px;
+  padding: 10px 0 0 10px;
 }
 @media screen and (max-width: 800px) {
   .ServicesBox {
@@ -136,5 +154,8 @@ a:hover {
   .Phone {
     text-align: center;
     padding-left: 0;
+  }
+  .QuoteBox {
+    position: relative;
   }
 }

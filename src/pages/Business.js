@@ -3,21 +3,29 @@ import Header from "../components/Header";
 export default function Business() {
   const titleStyle = {
     fonstSize: "20px",
-    textAlign: "center"
+    textAlign: "left"
+    // paddingLeft: "3vw"
   };
   const bodyStyle = {
     padding: "5vh 3vw"
+  };
+  const imgStyle = {
+    maxHeight: "50vh",
+    maxWidth: "100%",
+    marginTop: "10px"
   };
   return (
     <div>
       <Header />
       <br />
-      <div style={titleStyle}>
-        <h1>Business Center</h1>
-        <h3>IT Support for Small and Mid-size Businesses</h3>
-      </div>
       <div className="BusinessGrid" style={bodyStyle}>
         <div className="BusinessBox">
+          <div style={titleStyle}>
+            <h1>Business Center</h1>
+            <h3>IT Support for Small and Mid-size Businesses</h3>
+            <br />
+            <br />
+          </div>
           <p>
             Full time IT support without hiring your own in-house IT staff.
             Looking for a more cost effective IT solution "SPCC" is your answer.
@@ -43,6 +51,7 @@ export default function Business() {
             src={require(".././images/business1.jpg")}
             alt="Laptop"
             align="right"
+            style={imgStyle}
           />
         </div>
       </div>
