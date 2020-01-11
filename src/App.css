@@ -1,7 +1,7 @@
 :root {
 	/* --service-box-size: 60%; */
 	--primary-color: #89b6d4;
-	--dark-color: #333333;
+	--dark-color: black;
 	--light-color: #e7e7e7;
 	--bad-color: #d46671;
 	--good-color: #5ba36c;
@@ -15,15 +15,15 @@
 }
 .App {
 	text-align: center;
-	color: black;
+	color: var(--dark-color);
 	height: 100vh;
-	background-color: black;
+	background-color: white;
 }
 header {
 	font-size: 2vh;
 	background-color: var(--dark-color);
-	background-color: black;
-	color: #fff;
+	background-color: white;
+	color: var(--dark-color);
 	height: 15%;
 	text-align: center;
 	text-decoration: 'none';
@@ -77,7 +77,7 @@ img {
 	/* background-color: #e6e6e6; */
 	/* overflow: hidden; */
 	/* height: 100%; */
-	background-color: black;
+	background-color: rgb(226, 226, 226);
 	padding: 7vw 0;
 }
 .ServicesBox {
@@ -85,7 +85,7 @@ img {
 	text-align: center;
 
 	font-family: 'Open Sans', sans-serif;
-	color: black;
+	color: white;
 
 	/* padding: 0 10vw; */
 }
@@ -167,7 +167,7 @@ a:hover {
 
 .Offering {
 	font-size: 3vh;
-	color: var(--light-color);
+	color: var(--dark-color);
 	padding-bottom: 10px;
 }
 .Offering p {
