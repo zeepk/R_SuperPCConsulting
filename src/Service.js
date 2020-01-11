@@ -8,10 +8,10 @@ var innerStyle = {
 
 export default function Service(props) {
 	var circleStyle = {
-		padding: 10,
-		margin: 20,
+		padding: 30,
+		margin: 0,
 		display: 'inline-block',
-		backgroundColor: '#6aa8c3',
+		backgroundColor: '#7fcbeb',
 		borderRadius: '50%',
 		width: '25vh',
 		height: '25vh'

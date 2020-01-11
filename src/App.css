@@ -39,6 +39,9 @@ hr {
 	text-align: center;
 	margin: auto;
 }
+h6 {
+	padding: 20px;
+}
 img {
 	/* max-width: 60vw; */
 	max-height: 100%;
@@ -46,6 +49,10 @@ img {
 }
 .ComputersImage {
 	box-shadow: none;
+	min-width: 100%;
+	max-width: 100%;
+}
+.LaptopImage {
 	max-width: 100%;
 }
 
@@ -131,6 +138,7 @@ a:hover {
 	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	/* grid-template-rows: 100%; */
 	grid-gap: 5vw;
+	background-color: #d2eaf5;
 }
 .BusinessBox {
 	text-align: left;
@@ -147,9 +155,33 @@ a:hover {
 	font-weight: bold;
 	padding: 30px;
 	text-align: center;
-	background-color: var(--primary-color);
+	background-color: #7fcbeb;
 	max-width: 100vw;
 	border-radius: 10px;
+}
+.circle {
+	counter-reset: list-counter;
+	list-style: none;
+	float: left;
+}
+.circle li {
+	margin: 1.5em 0;
+}
+.circle li:before {
+	content: counter(list-counter);
+	counter-increment: list-counter;
+	width: 1em;
+	height: 1em;
+	padding: 0.5em;
+	margin-right: 1em;
+	border-radius: 50%;
+	border: 0.25em solid #ccc;
+	background: #000;
+	color: #fff;
+	font-family: arial;
+	font-weight: bold;
+	text-align: center;
+	display: inline-block;
 }
 
 .Phone {

@@ -34,15 +34,13 @@ function App() {
 								<header>
 									<Header />
 								</header>
-
+								<br />
 								<body>
 									<img
 										src={require('./images/computer_table.jpg')}
 										alt="Computers"
 										className="ComputersImage"
 									/>
-									<br />
-									<br />
 									<br />
 									<br />
 									<br />
@@ -56,6 +54,7 @@ function App() {
 													circleColor="#6aa8c3"
 												/>
 											</Link>
+
 											<h6>IT Support for Small and Mid-size Businesses</h6>
 										</div>
 
@@ -70,7 +69,8 @@ function App() {
 													circleColor="#6aa8c3"
 												/>
 											</Link>
-											<h6>IT Support for Small and Mid-size Businesses</h6>
+
+											<h6>Complete Home Solutions and Training</h6>
 										</div>
 
 										<div class="NavBox d">
@@ -84,7 +84,8 @@ function App() {
 													circleColor="#6aa8c3"
 												/>
 											</Link>
-											<h6>IT Support for Small and Mid-size Businesses</h6>
+
+											<h6>Simplify your IT Infrastructure and Save on Cost</h6>
 										</div>
 
 										<div class="NavBox e">
@@ -98,7 +99,8 @@ function App() {
 													circleColor="#6aa8c3"
 												/>
 											</Link>
-											<h6>IT Support for Small and Mid-size Businesses</h6>
+
+											<h6>Dead Hard Drive? All is not lost! We can Help!</h6>
 										</div>
 									</div>
 

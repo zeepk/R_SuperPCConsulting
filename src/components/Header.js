@@ -5,7 +5,8 @@ export default function Header() {
 	const linkStyle = {
 		color: 'black',
 		textDecoration: 'none',
-		textAlign: 'center'
+		textAlign: 'center',
+		fontSize: '2vw'
 	};
 
 	return (
