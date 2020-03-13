@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Header() {
 	const linkStyle = {
-		color: 'black',
+		color: 'white',
 		textDecoration: 'none',
 		textAlign: 'center',
 		fontSize: '2vw'

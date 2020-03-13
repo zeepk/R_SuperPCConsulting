@@ -22,11 +22,12 @@
 header {
 	font-size: 2vh;
 	background-color: var(--dark-color);
-	background-color: white;
-	color: black;
+	background-color: rgb(54, 134, 145);
+	color: white;
 	height: 15%;
 	text-align: center;
 	text-decoration: 'none';
+	margin-bottom: 1vh;
 }
 body {
 	background-color: white;
