@@ -6,8 +6,9 @@
 	margin: 0 1vw;
 }
 .p-panel-content {
-	background-color: rgba(132, 180, 212, 0.411) !important;
-	min-height: 30vh;
+	background-color: rgba(31, 147, 224, 0.411) !important;
+	min-height: 40vh;
+	font-size: 18px;
 }
 .p-panel-title {
 	font-size: 3vh;
