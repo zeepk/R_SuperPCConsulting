@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 var innerStyle = {
 	padding: '3vh 0',
-	fontSize: '1.8vh'
+	fontSize: '1vh',
 };
 
 export default function Service(props) {
@@ -14,7 +14,7 @@ export default function Service(props) {
 		backgroundColor: '#7fcbeb',
 		borderRadius: '50%',
 		width: '25vh',
-		height: '25vh'
+		height: '25vh',
 	};
 	var textBoxStyle = {};
 	return (

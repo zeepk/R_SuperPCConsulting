@@ -1,23 +1,20 @@
 import React from 'react';
-import Header from '../components/Header';
 export default function Business() {
 	const titleStyle = {
 		fonstSize: '20px',
-		textAlign: 'left'
+		textAlign: 'left',
 		// paddingLeft: "3vw"
 	};
 	const bodyStyle = {
-		padding: '5vh 3vw'
+		padding: '5vh 3vw',
 	};
 	const imgStyle = {
 		maxHeight: '50vh',
 		maxWidth: '100%',
-		marginTop: '10px'
+		marginTop: '10px',
 	};
 	return (
 		<div>
-			<Header />
-			<br />
 			<div className="BusinessGrid" style={bodyStyle}>
 				<div className="BusinessBox">
 					<div style={titleStyle}>
@@ -56,7 +53,7 @@ export default function Business() {
 				</div>
 				<div className="BusinessBox">
 					<img
-						src={require('.././images/business1.jpg')}
+						src={require('../../images/business1.jpg')}
 						alt="Laptop"
 						align="right"
 						style={imgStyle}
