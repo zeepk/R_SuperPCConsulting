@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../style/Home.css';
 import { Panel } from 'primereact/panel';
+import { Card } from 'primereact/card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
 	faBriefcase,
@@ -9,18 +10,21 @@ import {
 	faUserCheck,
 } from '@fortawesome/free-solid-svg-icons';
 import Flip from 'react-reveal/Flip';
+import Fade from 'react-reveal/Fade';
 export default class Home extends Component {
 	render() {
 		return (
 			<div>
-				<img
-					className="laptop-table-image"
-					src={require('../../images/computer_table.jpg')}
-					alt="Laptop"
-				/>
+				<Fade>
+					<img
+						className="laptop-table-image"
+						src={require('../../images/computer_table.jpg')}
+						alt="Laptop"
+					/>
+				</Fade>
 				<div className="p-grid">
-					<Flip left cascade>
-						<div className="p-col-12 p-md-6 p-lg-3">
+					<div className="p-col-12 p-md-6 p-lg-3">
+						<a class="nav-link" href="/business">
 							<Panel header="Business">
 								<FontAwesomeIcon
 									className="icon"
@@ -33,8 +37,10 @@ export default class Home extends Component {
 									managed service contract with 24/hr support.
 								</p>
 							</Panel>
-						</div>
-						<div className="p-col-12 p-md-6 p-lg-3">
+						</a>
+					</div>
+					<div className="p-col-12 p-md-6 p-lg-3">
+						<a class="nav-link" href="/residential">
 							<Panel header="Residential">
 								<FontAwesomeIcon className="icon" icon={faHome} size={'6x'} />
 								<p>
@@ -44,8 +50,10 @@ export default class Home extends Component {
 									reasonable price.
 								</p>
 							</Panel>
-						</div>
-						<div className="p-col-12 p-md-6 p-lg-3">
+						</a>
+					</div>
+					<div className="p-col-12 p-md-6 p-lg-3">
+						<a class="nav-link" href="/cloudservice">
 							<Panel header="Cloud Service">
 								<FontAwesomeIcon
 									className="icon"
@@ -62,8 +70,10 @@ export default class Home extends Component {
 									<li>Google Apps</li>
 								</ul>
 							</Panel>
-						</div>
-						<div className="p-col-12 p-md-6 p-lg-3">
+						</a>
+					</div>
+					<div className="p-col-12 p-md-6 p-lg-3">
+						<a class="nav-link" href="/datarecovery">
 							<Panel header="Data Recovery">
 								<FontAwesomeIcon
 									className="icon"
@@ -75,6 +85,70 @@ export default class Home extends Component {
 									recovery
 								</p>
 							</Panel>
+						</a>
+					</div>
+				</div>
+				<Fade>
+					<div className="imgContainer">
+						<div className="tag">Services</div>
+						<img
+							className="white-desk-image"
+							src={require('../../images/white_desk.jpg')}
+							alt="Laptop"
+						/>
+					</div>
+				</Fade>
+				<div className="service-list">
+					<Flip left cascade>
+						<div className="p-grid">
+							<div className="p-col-12 p-md-6">
+								<Card className="service-item" title="Virus Removal"></Card>
+							</div>
+							<div className="p-col-12 p-md-6">
+								<Card className="service-item" title="Data Recovery"></Card>
+							</div>
+							<div className="p-col-12 p-md-6">
+								<Card
+									className="service-item"
+									title="Residential and home repair"
+								></Card>
+							</div>
+							<div className="p-col-12 p-md-6">
+								<Card className="service-item" title="Startup problems"></Card>
+							</div>
+							<div className="p-col-12 p-md-6">
+								<Card
+									className="service-item"
+									title="Automatic backup solutions"
+								></Card>
+							</div>
+							<div className="p-col-12 p-md-6">
+								<Card
+									className="service-item"
+									title="Laptop screen repair"
+								></Card>
+							</div>
+							<div className="p-col-12 p-md-6">
+								<Card
+									className="service-item"
+									title="Iphone/ipad repair"
+								></Card>
+							</div>
+							<div className="p-col-12 p-md-6">
+								<Card
+									className="service-item"
+									title="​Network Installation and Setup"
+								></Card>
+							</div>
+							<div className="p-col-12 p-md-6">
+								<Card className="service-item" title="Onsite Training"></Card>
+							</div>
+							<div className="p-col-12 p-md-6">
+								<Card
+									className="service-item"
+									title="​Managed Service Contract"
+								></Card>
+							</div>
 						</div>
 					</Flip>
 				</div>

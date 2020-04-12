@@ -37,7 +37,7 @@ h6 {
 img {
 	/* max-width: 60vw; */
 	max-height: 100%;
-	box-shadow: 5px 5px 10px;
+	/* box-shadow: 5px 5px 10px; */
 }
 .ComputersImage {
 	box-shadow: none;
