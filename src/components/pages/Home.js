@@ -22,6 +22,14 @@ export default class Home extends Component {
 						alt="Laptop"
 					/>
 				</Fade>
+				<div className="welcome">
+					<p className="tt">Technology Troubles?</p>
+					<p className="dw">Don't worry, we've all been there.</p>
+					<p className="su">
+						Super PC Consulting is here to help you get on track! Check out all
+						the services we offer below.
+					</p>
+				</div>
 				<div className="p-grid">
 					<div className="p-col-12 p-md-6 p-lg-3">
 						<a class="nav-link" href="/business">

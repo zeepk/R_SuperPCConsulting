@@ -84,3 +84,20 @@ ul {
 	text-align: left;
 	margin-left: 2vw;
 }
+.welcome {
+	height: 50vh;
+	color: white;
+	background-color: #e4a034;
+}
+.tt {
+	font-size: 60px;
+	margin-bottom: 0;
+}
+.dw {
+	font-size: 50px;
+	margin-bottom: 0;
+}
+.su {
+	font-size: 30px;
+	margin-bottom: 0;
+}
