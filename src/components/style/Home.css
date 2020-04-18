@@ -1,6 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@media screen and (max-width: 620px) {
+	.welcome {
+		background-color: #ffb641;
+		position: relative;
+		height: 90vh !important;
+	}
+	.welcome-grid {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+	.laptop-table-image {
+		height: 30vh;
+		object-fit: cover;
+	}
+}
 .laptop-table-image {
 	width: 100%;
 	/* margin-bottom: 5vh; */
+	/* height: 20vh; */
 }
 .white-desk-image {
 	width: 100%;
@@ -20,7 +37,7 @@
 }
 .p-grid {
 	padding: 5vh 0;
-	background-color: #ec712a44 !important;
+	background-color: #2a78ec44 !important;
 }
 .p-panel-content {
 	color: #007ad9 !important;
@@ -84,20 +101,43 @@ ul {
 	text-align: left;
 	margin-left: 2vw;
 }
+.welcome-grid {
+	padding: 0;
+}
+.trouble-pic {
+	background-color: #ffb641;
+	position: relative;
+	height: 70vh;
+}
 .welcome {
-	height: 50vh;
 	color: white;
 	background-color: #e4a034;
+	padding: 0;
+	height: 70vh;
 }
 .tt {
-	font-size: 60px;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 55px;
 	margin-bottom: 0;
 }
 .dw {
 	font-size: 50px;
 	margin-bottom: 0;
+	font-style: italic;
 }
 .su {
+	font-family: 'Libre Baskerville', sans-serif;
 	font-size: 30px;
 	margin-bottom: 0;
+}
+.laptop-trouble {
+	position: relative;
+	top: 0;
+	bottom: 0;
+	margin: 10vh 2vh;
+	max-height: 100%;
+	max-width: 100%;
+}
+.welcome-text {
+	margin: 8vw 5vw;
 }
