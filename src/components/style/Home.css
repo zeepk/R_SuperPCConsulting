@@ -3,7 +3,7 @@
 	.welcome {
 		background-color: #ffb641;
 		position: relative;
-		height: 110vh !important;
+		height: 125vh !important;
 	}
 	.welcome-grid {
 		display: flex;
