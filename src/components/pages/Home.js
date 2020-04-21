@@ -41,7 +41,7 @@ export default class Home extends Component {
 						</div>
 					</div>
 				</div>
-				<div className="p-grid">
+				<div className="p-grid service-types">
 					<div className="p-col-12 p-md-6 p-lg-3">
 						<a class="nav-link" href="/business">
 							<Panel header="Business">

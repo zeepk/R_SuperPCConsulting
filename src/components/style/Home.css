@@ -3,7 +3,7 @@
 	.welcome {
 		background-color: #ffb641;
 		position: relative;
-		height: 90vh !important;
+		height: 110vh !important;
 	}
 	.welcome-grid {
 		display: flex;
@@ -12,6 +12,9 @@
 	.laptop-table-image {
 		height: 30vh;
 		object-fit: cover;
+	}
+	.trouble-pic {
+		display: none;
 	}
 }
 .laptop-table-image {
@@ -37,7 +40,13 @@
 }
 .p-grid {
 	padding: 5vh 0;
-	background-color: #2a78ec44 !important;
+	/* background-color: #2a78ec44 !important; */
+	/* background-image: linear-gradient(to bottom right, #2a78ec, #2a78ec44); */
+}
+.service-types {
+	background-image: url('../../images/pattern.png');
+	background-repeat: repeat;
+	background-attachment: fixed;
 }
 .p-panel-content {
 	color: #007ad9 !important;
@@ -58,11 +67,11 @@
 	margin-bottom: 1vh;
 }
 .service-item {
-	margin: 1vh 1vw;
+	margin: 1vh 5vw;
 	color: white !important;
 	background-color: rgb(66, 66, 66) !important;
 	padding: 20px 0;
-	box-shadow: 5px 5px 8px 3px #696969 !important;
+	box-shadow: 5px 5px 8px 3px #494949 !important;
 	transition: transform 0.2s !important; /* Animation */
 	/* z-index: 0; */
 }
@@ -72,7 +81,9 @@
 	z-index: 1000 !important;
 }
 .service-list {
-	/* margin-top: 500px; */
+	background-image: url('../../images/computer_table_3.jpg');
+	background-attachment: fixed;
+	background-size: cover;
 }
 .imgContainer {
 	display: block;
@@ -99,7 +110,7 @@
 ul {
 	color: black;
 	text-align: left;
-	margin-left: 2vw;
+	margin-left: 30px;
 }
 .welcome-grid {
 	padding: 0;
@@ -107,23 +118,48 @@ ul {
 .trouble-pic {
 	background-color: #ffb641;
 	position: relative;
-	height: 70vh;
+	height: 90vh;
 }
 .welcome {
 	color: white;
 	background-color: #e4a034;
 	padding: 0;
-	height: 70vh;
+	height: 90vh;
 }
 .tt {
 	font-family: 'Libre Baskerville', serif;
 	font-size: 55px;
-	margin-bottom: 0;
+	margin-bottom: 10vh;
 }
 .dw {
 	font-size: 50px;
-	margin-bottom: 0;
+	margin-bottom: 10vh;
 	font-style: italic;
+	-webkit-animation: 2s ease 0s normal forwards 1 fadein;
+	animation: 2s ease 0s normal forwards 1 fadein;
+}
+@keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	66% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadein {
+	0% {
+		opacity: 0;
+	}
+	66% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 .su {
 	font-family: 'Libre Baskerville', sans-serif;
