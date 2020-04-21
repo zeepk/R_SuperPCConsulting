@@ -16,6 +16,10 @@
 	.trouble-pic {
 		display: none;
 	}
+	.service-list {
+		background-attachment: fixed;
+		background-size: cover !important;
+	}
 }
 .laptop-table-image {
 	width: 100%;
