@@ -1,0 +1,58 @@
+.collapsible {
+	background-color: #777;
+	color: white;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+	background-color: #555;
+}
+
+.content {
+	padding: 0 18px;
+	display: none;
+	overflow: hidden;
+	background-color: #f1f1f1;
+}
+.services-collapseable .p-panel-content {
+	background: transparent !important;
+}
+.services-collapseable .p-panel-titlebar {
+	visibility: hidden !important;
+}
+.open-button {
+	margin: 10vh 10vh !important;
+	font-size: 30px !important;
+}
+.service-item {
+	margin: 1vh 5vw;
+	color: white !important;
+	background-color: rgb(66, 66, 66) !important;
+	padding: 20px 0;
+	box-shadow: 5px 5px 8px 3px #494949 !important;
+	/* transition: transform 0.2s !important; */
+	/* z-index: 0; */
+}
+.service-item:hover {
+	/* transform: scale(1.1); */
+	background-color: #007ad9 !important;
+	z-index: 1000 !important;
+}
+.service-list {
+	background-image: url('../../images/computer_table_3.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+}
+.imgContainer {
+	display: block;
+	margin: auto;
+	/* border: 1px solid #dddddd; */
+	position: relative;
+}

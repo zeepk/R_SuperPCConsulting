@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../style/Home.css';
 import { Panel } from 'primereact/panel';
-import { Card } from 'primereact/card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
 	faBriefcase,
@@ -9,8 +8,9 @@ import {
 	faCloudUploadAlt,
 	faUserCheck,
 } from '@fortawesome/free-solid-svg-icons';
-import Flip from 'react-reveal/Flip';
 import Fade from 'react-reveal/Fade';
+import ServiceList from './ServiceList';
+
 export default class Home extends Component {
 	render() {
 		return (
@@ -44,7 +44,7 @@ export default class Home extends Component {
 				<div className="p-grid service-types">
 					<div className="p-col-12 p-md-6 p-lg-3">
 						<a class="nav-link" href="/business">
-							<Panel header="Business">
+							<Panel className="nav-panel" header="Business">
 								<FontAwesomeIcon
 									className="icon"
 									icon={faBriefcase}
@@ -60,7 +60,7 @@ export default class Home extends Component {
 					</div>
 					<div className="p-col-12 p-md-6 p-lg-3">
 						<a class="nav-link" href="/residential">
-							<Panel header="Residential">
+							<Panel className="nav-panel" header="Residential">
 								<FontAwesomeIcon className="icon" icon={faHome} size={'6x'} />
 								<p>
 									Is your computer running slowly or crashing? We offer complete
@@ -73,15 +73,15 @@ export default class Home extends Component {
 					</div>
 					<div className="p-col-12 p-md-6 p-lg-3">
 						<a class="nav-link" href="/cloudservice">
-							<Panel header="Cloud Service">
+							<Panel className="nav-panel" header="Cloud Service">
 								<FontAwesomeIcon
 									className="icon"
 									icon={faCloudUploadAlt}
 									size={'6x'}
 								/>
 								<p>
-									Simplify your IT infrastructure! Save on IT cost, access your
-									data anywhere, such as:
+									Simplify your IT infrastructure! Save on IT costs and access
+									your data anywhere, such as:
 								</p>
 								<ul>
 									<li>iCloud</li>
@@ -93,84 +93,29 @@ export default class Home extends Component {
 					</div>
 					<div className="p-col-12 p-md-6 p-lg-3">
 						<a class="nav-link" href="/datarecovery">
-							<Panel header="Data Recovery">
+							<Panel className="nav-panel" header="Data Recovery">
 								<FontAwesomeIcon
 									className="icon"
 									icon={faUserCheck}
 									size={'6x'}
 								/>
 								<p>
-									Dead hard drive? All is not lost. We can help with full data
-									recovery
+									Dead hard drive? <br />
+									All is not lost! We can help with full data recovery. Give us
+									a call and we'll see what we can do.
 								</p>
 							</Panel>
 						</a>
 					</div>
 				</div>
-				<Fade>
-					<div className="imgContainer">
-						<div className="tag">Services</div>
-						<img
-							className="white-desk-image"
-							src={require('../../images/white_desk.jpg')}
-							alt="Laptop"
-						/>
-					</div>
-				</Fade>
-				<div className="service-list">
-					<Flip left cascade>
-						<div className="p-grid">
-							<div className="p-col-12 p-md-6">
-								<Card className="service-item" title="Virus Removal"></Card>
-							</div>
-							<div className="p-col-12 p-md-6">
-								<Card className="service-item" title="Data Recovery"></Card>
-							</div>
-							<div className="p-col-12 p-md-6">
-								<Card
-									className="service-item"
-									title="Residential and home repair"
-								></Card>
-							</div>
-							<div className="p-col-12 p-md-6">
-								<Card className="service-item" title="Startup problems"></Card>
-							</div>
-							<div className="p-col-12 p-md-6">
-								<Card
-									className="service-item"
-									title="Automatic backup solutions"
-								></Card>
-							</div>
-							<div className="p-col-12 p-md-6">
-								<Card
-									className="service-item"
-									title="Laptop screen repair"
-								></Card>
-							</div>
-							<div className="p-col-12 p-md-6">
-								<Card
-									className="service-item"
-									title="Iphone/ipad repair"
-								></Card>
-							</div>
-							<div className="p-col-12 p-md-6">
-								<Card
-									className="service-item"
-									title="​Network Installation and Setup"
-								></Card>
-							</div>
-							<div className="p-col-12 p-md-6">
-								<Card className="service-item" title="Onsite Training"></Card>
-							</div>
-							<div className="p-col-12 p-md-6">
-								<Card
-									className="service-item"
-									title="​Managed Service Contract"
-								></Card>
-							</div>
-						</div>
-					</Flip>
+				<div className="divider">
+					<p className="divider-text">
+						No matter the issue.. <br />
+						we'll work with you to find an easy solution
+					</p>
 				</div>
+				<ServiceList />
+				<div className="footer">footer tbd 😀</div>
 			</div>
 		);
 	}
