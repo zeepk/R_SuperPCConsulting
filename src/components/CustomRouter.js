@@ -6,6 +6,7 @@ import Residential from './pages/Residential';
 import CloudService from './pages/CloudService';
 import DataRecovery from './pages/DataRecovery';
 import Header from './Header';
+import Footer from './Footer';
 export default class CustomRouter extends Component {
 	render() {
 		return (
@@ -18,6 +19,7 @@ export default class CustomRouter extends Component {
 					<Route exact path="/CloudService" component={CloudService} />
 					<Route exact path="/DataRecovery" component={DataRecovery} />
 				</Router>
+				<Footer />
 			</div>
 		);
 	}

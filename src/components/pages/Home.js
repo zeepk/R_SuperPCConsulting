@@ -111,11 +111,10 @@ export default class Home extends Component {
 				<div className="divider">
 					<p className="divider-text">
 						No matter the issue.. <br />
-						we'll work with you to find an easy solution
+						we'll work with you to find an easy solution!
 					</p>
 				</div>
 				<ServiceList />
-				<div className="footer">footer tbd 😀</div>
 			</div>
 		);
 	}
