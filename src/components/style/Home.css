@@ -160,15 +160,15 @@ ul {
 	margin: 8vw 5vw;
 }
 .divider {
-	background-color: #ffcf81;
+	background-color: #d49838;
 	padding: 5vh 0;
 	box-shadow: 0px 0px 30px 5px #696969 !important;
 	position: relative;
 	z-index: 10;
 }
 .divider-text {
-	font-size: 50px;
-	color: #006fc4;
+	font-size: clamp(20px, 5vw, 50px);
+	color: white;
 	font-family: 'Fira Sans', sans-serif;
 	/* text-shadow: 9px 0px 9px #858585b0; */
 	margin: 0 !important;
