@@ -1,20 +1,40 @@
-import React, { Component } from 'react';
-import '../style/Home.css';
-import { Panel } from 'primereact/panel';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { Component } from 'react'
+import '../style/Home.css'
+import { Panel } from 'primereact/panel'
+import { Messages } from 'primereact/messages'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
 	faBriefcase,
 	faHome,
 	faCloudUploadAlt,
 	faUserCheck,
-} from '@fortawesome/free-solid-svg-icons';
-import Fade from 'react-reveal/Fade';
-import ServiceList from './ServiceList';
+} from '@fortawesome/free-solid-svg-icons'
+import Fade from 'react-reveal/Fade'
+import ServiceList from './ServiceList'
 
 export default class Home extends Component {
+	componentDidMount() {
+		this.messages.show({
+			severity: 'warn',
+			summary: 'COVID-19 Update:',
+			detail:
+				'We hope you are staying safe and healthy. Most of our services can still be provided just as effectively over the phone! Give us a call at 000-867-5309',
+			sticky: true,
+		})
+	}
 	render() {
 		return (
 			<div>
+				<Messages
+					style={{
+						position: 'absolute',
+						zIndex: 1000,
+						top: '15%',
+						left: '50%',
+						transform: 'translate(-50%, -50%)',
+					}}
+					ref={(el) => (this.messages = el)}
+				></Messages>
 				<Fade>
 					<img
 						className="laptop-table-image"
@@ -116,6 +136,6 @@ export default class Home extends Component {
 				</div>
 				<ServiceList />
 			</div>
-		);
+		)
 	}
 }

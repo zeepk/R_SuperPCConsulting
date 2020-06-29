@@ -1,6 +1,6 @@
-import React from 'react';
+import React from 'react'
 // import Slide from 'react-reveal/Slide';
-import './style/Header.css';
+import './style/Header.css'
 export default function Header() {
 	return (
 		// <Slide right>
@@ -57,5 +57,5 @@ export default function Header() {
 			</nav>
 		</div>
 		// </Slide>
-	);
+	)
 }
