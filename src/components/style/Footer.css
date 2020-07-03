@@ -2,8 +2,10 @@
 	/* margin: 1vh 0; */
 	padding: 5px 0;
 	/* background-color: #a1d4cb; */
-	background-color: rgb(104, 104, 104);
-	font-size: 17px;
+	background-color: black;
+	font-size: 14px;
+	height: auto;
+	color: white;
 }
 .made-by {
 	display: inline;
@@ -25,17 +27,19 @@
 }
 .footer-ul {
 	list-style-type: none;
-	margin: 0 auto;
+	margin: 0 0 0 10vw;
 	padding: 0 10px;
 	overflow: hidden;
 }
 
 .footer-li {
 	color: white !important;
-	padding-right: 2vw;
-	float: left;
+	padding: 5px 0;
+	/* float: left; */
 }
-
+a {
+	color: white !important;
+}
 /* li a {
 	display: inline;
 	color: white;

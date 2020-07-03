@@ -31,7 +31,7 @@ export default class ServiceList extends Component {
 					collapsed={this.state.opened}
 					onToggle={(e) => this.setState({ opened: e.value })}
 				> */}
-				<Fade>
+				{/* <Fade>
 					<div className="imgContainer" onClick={this.toggle_open}>
 						<div className="tag">Services</div>
 						<img
@@ -40,7 +40,7 @@ export default class ServiceList extends Component {
 							alt="Laptop"
 						/>
 					</div>
-				</Fade>
+				</Fade> */}
 				<div className="p-grid">
 					<div className="p-col-12 p-md-6">
 						<Card className="service-item" title="Virus Removal"></Card>

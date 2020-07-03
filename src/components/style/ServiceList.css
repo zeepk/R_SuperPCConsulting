@@ -46,9 +46,10 @@
 	z-index: 1000 !important;
 }
 .service-list {
-	background-image: url('../../images/computer_table_3.jpg');
+	/* background-image: url('../../images/computer_table_3.jpg');
 	background-attachment: fixed;
-	background-size: cover;
+	background-size: cover; */
+	background-color: #ffb641;
 }
 .imgContainer {
 	display: block;
