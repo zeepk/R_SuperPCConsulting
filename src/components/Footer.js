@@ -49,10 +49,7 @@ class Footer extends Component {
 							</li>
 							<li className="footer-li">
 								Made by
-								<a
-									className="footer-link"
-									href="https://twitter.com/matthughes2112"
-								>
+								<a className="footer-link" href="https://matthughes.dev">
 									{' '}
 									Matt Hughes
 								</a>
