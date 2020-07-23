@@ -55,6 +55,16 @@ export default function Header() {
 					</ul>
 				</div>
 			</nav>
+			<div
+				style={{
+					backgroundColor: '#2A9FD6',
+					color: 'white',
+					padding: '5vh 0',
+				}}
+			>
+				<p className="tt">Technology Troubles?</p>
+				<p className="dw">Don't worry, we've all been there.</p>
+			</div>
 		</div>
 		// </Slide>
 	)

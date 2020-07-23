@@ -30,13 +30,13 @@ export default class Home extends Component {
 					className="alert-box"
 					ref={(el) => (this.messages = el)}
 				></Messages>
-				<Fade>
+				{/* <Fade>
 					<img
 						className="laptop-table-image"
 						src={require('../../images/computer_table.jpg')}
 						alt="Laptop"
 					/>
-				</Fade>
+				</Fade> */}
 				<div className="p-grid p-nogutter welcome-grid">
 					<div className="p-col-12 p-md-6 p-nogutter trouble-pic">
 						<img
@@ -47,8 +47,6 @@ export default class Home extends Component {
 					</div>
 					<div className="p-col-12 p-md-6 p-nogutter welcome">
 						<div className="welcome-text">
-							<p className="tt">Technology Troubles?</p>
-							<p className="dw">Don't worry, we've all been there.</p>
 							<p className="su">
 								Super PC Consulting is here to help you get on track! Check out
 								all the services we offer below.

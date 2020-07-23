@@ -5,7 +5,7 @@
 	.welcome {
 		background-color: #ffb641;
 		position: relative;
-		height: 125vh !important;
+		height: 40vh !important;
 	}
 	.welcome-grid {
 		display: flex;
@@ -110,24 +110,24 @@ ul {
 	padding: 0;
 }
 .trouble-pic {
-	background-color: #ffb641;
+	background-color: #dfbc83;
 	position: relative;
-	height: 90vh;
+	height: 70vh;
 }
 .welcome {
 	color: white;
 	background-color: #e4a034;
 	padding: 0;
-	height: 90vh;
+	height: 70vh;
 }
 .tt {
 	font-family: 'Fira Sans', sans-serif;
 	font-size: 55px;
-	margin-bottom: 10vh;
+	margin-bottom: 0 !important;
 }
 .dw {
 	font-size: 50px;
-	margin-bottom: 10vh;
+	margin-bottom: 0 !important;
 	font-style: italic;
 	-webkit-animation: 2s ease 0s normal forwards 1 fadein;
 	animation: 2s ease 0s normal forwards 1 fadein;
